@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>API Digimon</title>
+</head>
+<body background="assets/img/fondo.jpg">
+
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <div class="logo">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/logo.png" alt="Logo" class="logo">
+        </a>
+      </div>
+      <form class="d-flex">
+        <input id="nombreProporcionado" class="form-control me-2" type="text" placeholder="Buscar Digimon..." aria-label="Search">
+        <button class="btn btn-primary" type="button" onclick="BuscarPorNombre()">Buscar</button>
+      </form>
+    </div>
+  </nav>
+
+
+    <div class="container">
+      <div class="abs-center">
+        <div class="card">
+          <div class="card-body">
+            <img id="imagen" src="assets/img/Digimon-Logo.png">
+            <p id="nombre"></p>
+            <p id="nivel"></p>
+            <hr>
+            <div class="text-center">
+              <b class="mx-auto">Busca aquí tu Digimon Favorito:</b>
+              <br>
+              <br>
+              <select class="btn btn-primary" id="SelectNombres" aria-label="Default select example">
+                <option value="">Seleccionar Digimon</option>             
+              </select>
+            </div>          
+          </div>         
+        </div>
+      </div>       
+    </div>
+    
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
